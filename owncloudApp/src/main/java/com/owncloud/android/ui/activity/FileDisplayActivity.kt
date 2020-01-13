@@ -31,7 +31,6 @@ package com.owncloud.android.ui.activity
 import android.Manifest
 import android.accounts.Account
 import android.accounts.AuthenticatorException
-import android.annotation.TargetApi
 import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.ComponentName
@@ -106,6 +105,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.io.File
 import java.util.ArrayList
 import kotlin.coroutines.CoroutineContext
@@ -321,6 +321,10 @@ class FileDisplayActivity : FileActivity(), FileFragment.ContainerActivity, OnEn
     override fun onAccountSet(stateWasRecovered: Boolean) {
         super.onAccountSet(stateWasRecovered)
         if (account != null) {
+            if (!AccountUtils.getServerVersion(account)?.isServerVersionSupported!!) {
+                Timber.d("Server version not supported")
+                showRequestAccountChangeNotice(getString(R.string.server_not_supported), true)
+            }
             /// Check whether the 'main' OCFile handled by the Activity is contained in the
             // current Account
             var file: OCFile? = file
@@ -970,8 +974,6 @@ class FileDisplayActivity : FileActivity(), FileFragment.ContainerActivity, OnEn
                                     launch(Dispatchers.Main) {
                                         if (credentials is OwnCloudBearerCredentials) { // OAuth
                                             showRequestRegainAccess()
-                                        } else if (!AccountUtils.getServerVersion(account)?.isServerVersionSupported!!){
-                                            showRequestAccountChangeNotice(getString(R.string.server_not_supported),true)
                                         } else {
                                             showRequestAccountChangeNotice(getString(R.string.auth_failure_snackbar), false)
                                         }
