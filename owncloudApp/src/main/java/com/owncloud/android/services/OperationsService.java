@@ -347,7 +347,6 @@ public class OperationsService extends Service {
             if (undispatched != null) {
                 listener.onRemoteOperationFinish(undispatched.first, undispatched.second);
                 return true;
-                //Timber.e("Sending callback later");
             } else {
                 return (!mServiceHandler.mPendingOperations.isEmpty());
             }
@@ -407,9 +406,6 @@ public class OperationsService extends Service {
          * Performs the next operation in the queue
          */
         private void nextOperation() {
-
-            //Timber.e("nextOperation init" );
-
             Pair<Target, RemoteOperation> next;
             synchronized (mPendingOperations) {
                 next = mPendingOperations.peek();
