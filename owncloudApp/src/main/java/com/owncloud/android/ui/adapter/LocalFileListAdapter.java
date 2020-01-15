@@ -33,7 +33,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.ThumbnailsCacheManager;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.utils.BitmapUtils;

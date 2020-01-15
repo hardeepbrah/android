@@ -31,7 +31,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 import androidx.appcompat.widget.AppCompatEditText;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -29,7 +29,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.fragment.app.transaction
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.datamodel.OCFile
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.sharing.shares.model.ShareType

@@ -70,7 +70,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
 import com.owncloud.android.lib.common.accounts.AccountTypeUtils;

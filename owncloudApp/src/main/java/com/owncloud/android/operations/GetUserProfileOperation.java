@@ -24,7 +24,7 @@ import android.accounts.AccountManager;
 import android.content.res.Resources;
 
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.ThumbnailsCacheManager;
 import com.owncloud.android.datamodel.UserProfile;
 import com.owncloud.android.datamodel.UserProfilesRepository;

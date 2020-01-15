@@ -44,9 +44,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.owncloud.android.BuildConfig;
+import co.spacium.cloud.BuildConfig;
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.FingerprintManager;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.db.PreferenceManager.CameraUploadsConfiguration;

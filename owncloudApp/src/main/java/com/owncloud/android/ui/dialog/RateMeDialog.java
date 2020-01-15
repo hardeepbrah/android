@@ -36,7 +36,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 import com.owncloud.android.AppRater;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.utils.PreferenceUtils;
 

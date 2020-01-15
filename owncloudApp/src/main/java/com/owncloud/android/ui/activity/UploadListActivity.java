@@ -39,7 +39,7 @@ import android.view.MenuItem;
 
 import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.datamodel.OCUpload;

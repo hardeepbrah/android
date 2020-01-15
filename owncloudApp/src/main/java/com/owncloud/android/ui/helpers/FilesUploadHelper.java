@@ -30,7 +30,7 @@ import android.os.Parcelable;
 import android.provider.MediaStore;
 
 import androidx.core.content.FileProvider;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.utils.FileStorageUtils;
 

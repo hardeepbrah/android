@@ -26,7 +26,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 
 /**

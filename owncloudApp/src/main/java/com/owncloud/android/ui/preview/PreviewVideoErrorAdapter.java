@@ -26,7 +26,7 @@ import android.content.Context;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.source.UnrecognizedInputFormatException;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 
 import java.io.EOFException;
 import java.io.IOException;

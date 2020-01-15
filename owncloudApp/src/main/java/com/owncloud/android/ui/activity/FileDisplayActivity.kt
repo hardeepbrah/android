@@ -56,7 +56,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.material.snackbar.Snackbar
 import com.owncloud.android.AppRater
 import com.owncloud.android.MainApp
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.authentication.FingerprintManager
 import com.owncloud.android.authentication.PassCodeManager
 import com.owncloud.android.authentication.PatternManager

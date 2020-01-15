@@ -38,7 +38,7 @@ import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.ExtendedListView;
 import com.owncloud.android.ui.activity.OnEnforceableRefreshListener;

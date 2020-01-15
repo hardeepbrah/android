@@ -63,7 +63,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountAuthenticator;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.db.PreferenceManager;

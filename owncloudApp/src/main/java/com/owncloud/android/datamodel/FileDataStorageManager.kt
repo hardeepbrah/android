@@ -42,8 +42,8 @@ import android.os.RemoteException
 import android.provider.MediaStore
 import androidx.core.content.FileProvider
 import androidx.core.util.Pair
+import co.spacium.cloud.R
 import com.owncloud.android.MainApp
-import com.owncloud.android.R
 import com.owncloud.android.authentication.AccountUtils
 import com.owncloud.android.datamodel.OCFile.AvailableOfflineStatus.*
 import com.owncloud.android.datamodel.OCFile.PATH_SEPARATOR

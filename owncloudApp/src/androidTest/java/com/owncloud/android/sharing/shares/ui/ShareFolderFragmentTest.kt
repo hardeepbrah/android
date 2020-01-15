@@ -28,7 +28,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.capabilities.model.OCCapability
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.utils.Event

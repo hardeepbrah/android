@@ -24,7 +24,7 @@ import android.os.Bundle;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.activity.BaseActivity;
 import com.owncloud.android.utils.PreferenceUtils;

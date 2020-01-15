@@ -35,7 +35,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.BaseColumns
 import android.widget.Toast
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.authentication.AccountUtils
 import com.owncloud.android.domain.capabilities.usecases.GetStoredCapabilitiesUseCase
 import com.owncloud.android.domain.sharing.sharees.GetShareesAsyncUseCase

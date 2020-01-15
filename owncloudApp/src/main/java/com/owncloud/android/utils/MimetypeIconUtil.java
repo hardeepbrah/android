@@ -20,7 +20,7 @@ package com.owncloud.android.utils;
 
 import android.webkit.MimeTypeMap;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

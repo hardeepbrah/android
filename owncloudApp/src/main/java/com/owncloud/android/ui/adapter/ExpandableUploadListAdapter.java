@@ -38,7 +38,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.datamodel.OCUpload;

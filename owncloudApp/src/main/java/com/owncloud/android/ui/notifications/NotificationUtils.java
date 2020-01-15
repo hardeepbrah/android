@@ -29,7 +29,7 @@ import android.os.HandlerThread;
 import android.os.Process;
 
 import androidx.core.app.NotificationCompat;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.ui.activity.ConflictsResolveActivity;
 

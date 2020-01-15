@@ -47,7 +47,7 @@ import android.util.Pair;
 
 import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.authentication.AuthenticatorActivity;
 import com.owncloud.android.datamodel.FileDataStorageManager;

@@ -24,7 +24,7 @@
 package com.owncloud.android.ui.errorhandling
 
 import android.content.res.Resources
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.lib.common.operations.RemoteOperation
 import com.owncloud.android.lib.common.operations.RemoteOperationResult
 import com.owncloud.android.operations.CopyFileOperation

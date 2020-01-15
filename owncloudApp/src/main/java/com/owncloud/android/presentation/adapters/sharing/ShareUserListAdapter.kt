@@ -28,7 +28,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.sharing.shares.model.ShareType
 import com.owncloud.android.utils.PreferenceUtils

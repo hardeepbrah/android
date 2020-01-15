@@ -135,6 +135,6 @@ public class GetServerInfoOperation extends RemoteOperation<GetServerInfoOperati
         public OwnCloudVersion mVersion = null;
         public String mBaseUrl = "";
         public List<AuthenticationMethod> mAuthMethods = new ArrayList<>();
-        public boolean mIsSslConn = false;
+        public boolean mIsSslConn = true;
     }
 }

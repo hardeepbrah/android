@@ -42,7 +42,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.operations.RemoteOperation;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;

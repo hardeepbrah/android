@@ -27,7 +27,7 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.ListView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCUpload;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.activity.FileActivity;

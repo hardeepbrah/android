@@ -30,7 +30,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 
 /**
  * Dialog which will be displayed to user upon keep-in-sync file conflict.

@@ -32,7 +32,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isNotChecked
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.platform.app.InstrumentationRegistry
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.utils.Event
 import com.owncloud.android.presentation.UIResult

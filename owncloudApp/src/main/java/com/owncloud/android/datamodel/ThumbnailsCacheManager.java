@@ -37,7 +37,7 @@ import android.widget.ImageView;
 
 import androidx.core.content.ContextCompat;
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.OwnCloudClient;

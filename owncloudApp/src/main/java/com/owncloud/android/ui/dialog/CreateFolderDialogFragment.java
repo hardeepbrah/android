@@ -34,7 +34,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.DialogFragment;
 import com.google.android.material.snackbar.Snackbar;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.resources.files.FileUtils;
 import com.owncloud.android.ui.activity.ComponentsGetter;

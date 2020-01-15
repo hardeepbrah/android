@@ -29,7 +29,7 @@ import android.widget.DatePicker;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 
 import java.text.DateFormat;

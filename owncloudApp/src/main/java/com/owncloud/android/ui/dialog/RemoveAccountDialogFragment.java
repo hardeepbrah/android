@@ -38,7 +38,7 @@ import android.os.Handler;
 import android.provider.DocumentsContract;
 
 import androidx.annotation.NonNull;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.ui.dialog.ConfirmationDialogFragment.ConfirmationDialogFragmentListener;
 
 public class RemoveAccountDialogFragment extends ConfirmationDialogFragment

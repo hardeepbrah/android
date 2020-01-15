@@ -25,7 +25,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 
 import java.util.LinkedList;

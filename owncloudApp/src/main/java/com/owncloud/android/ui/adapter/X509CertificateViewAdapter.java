@@ -23,7 +23,7 @@ package com.owncloud.android.ui.adapter;
 import android.view.View;
 import android.widget.TextView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.dialog.SslUntrustedCertDialog;
 

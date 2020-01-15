@@ -36,7 +36,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.FingerprintUIHelper;
 import com.owncloud.android.authentication.PassCodeManager;
 import com.owncloud.android.authentication.PatternManager;

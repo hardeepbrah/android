@@ -32,7 +32,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withTagValue
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.capabilities.model.CapabilityBooleanType
 import com.owncloud.android.domain.capabilities.model.OCCapability
 import com.owncloud.android.domain.sharing.shares.model.OCShare

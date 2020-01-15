@@ -34,7 +34,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.owncloud.android.MainApp;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.OwnCloudClientFactory;
 import com.owncloud.android.lib.common.accounts.AccountTypeUtils;

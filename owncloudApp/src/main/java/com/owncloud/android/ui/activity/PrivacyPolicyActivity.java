@@ -31,7 +31,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.utils.DisplayUtils;
 import com.owncloud.android.utils.PreferenceUtils;
 

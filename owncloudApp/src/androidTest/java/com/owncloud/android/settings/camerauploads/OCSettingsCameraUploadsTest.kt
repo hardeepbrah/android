@@ -36,7 +36,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.ui.activity.LocalFolderPickerActivity
 import com.owncloud.android.ui.activity.Preferences
 import org.junit.After

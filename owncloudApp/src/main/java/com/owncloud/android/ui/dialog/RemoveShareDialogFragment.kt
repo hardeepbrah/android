@@ -32,7 +32,7 @@ import android.accounts.Account
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.sharing.shares.model.ShareType
 import com.owncloud.android.lib.common.utils.Log_OC

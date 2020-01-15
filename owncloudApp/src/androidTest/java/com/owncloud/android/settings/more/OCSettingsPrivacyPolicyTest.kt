@@ -28,7 +28,7 @@ import androidx.test.espresso.web.webdriver.DriverAtoms.findElement
 import androidx.test.espresso.web.webdriver.DriverAtoms.getText
 import androidx.test.espresso.web.webdriver.Locator
 import androidx.test.rule.ActivityTestRule
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.ui.activity.PrivacyPolicyActivity
 import org.hamcrest.Matchers.containsString
 import org.junit.After

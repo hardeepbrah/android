@@ -34,7 +34,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.utils.PreferenceUtils;
 
 import java.util.ArrayList;

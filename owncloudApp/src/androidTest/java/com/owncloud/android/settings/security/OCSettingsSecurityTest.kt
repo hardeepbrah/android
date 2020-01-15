@@ -39,7 +39,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isEnabled
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.ui.activity.PassCodeActivity
 import com.owncloud.android.ui.activity.PatternLockActivity
 import com.owncloud.android.ui.activity.Preferences

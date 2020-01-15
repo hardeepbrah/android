@@ -31,7 +31,7 @@ import android.webkit.MimeTypeMap;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.FileProvider;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.network.WebdavUtils;
 import com.owncloud.android.lib.common.utils.Log_OC;
 

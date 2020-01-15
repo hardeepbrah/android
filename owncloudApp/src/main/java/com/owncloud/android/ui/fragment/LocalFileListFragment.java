@@ -31,7 +31,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.adapter.LocalFileListAdapter;
 import com.owncloud.android.utils.PreferenceUtils;

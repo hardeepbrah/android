@@ -47,7 +47,7 @@ import android.text.TextUtils
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.sqlite.db.SupportSQLiteQueryBuilder
 import com.owncloud.android.MainApp
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.data.Executors
 import com.owncloud.android.data.capabilities.datasources.implementation.OCLocalCapabilitiesDataSource
 import com.owncloud.android.data.capabilities.db.OCCapabilityEntity

@@ -33,7 +33,7 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.utils.PreferenceUtils;
 
 public class LoadingDialog extends DialogFragment {

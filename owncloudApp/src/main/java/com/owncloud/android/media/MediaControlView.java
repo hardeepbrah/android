@@ -40,7 +40,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.utils.DisplayUtils;
 import com.owncloud.android.utils.PreferenceUtils;
 

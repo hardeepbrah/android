@@ -23,7 +23,7 @@ import android.net.Uri;
 import android.os.Parcelable;
 
 import androidx.fragment.app.FragmentManager;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.files.services.FileUploader;
 import com.owncloud.android.files.services.TransferRequester;
 import com.owncloud.android.lib.common.utils.Log_OC;

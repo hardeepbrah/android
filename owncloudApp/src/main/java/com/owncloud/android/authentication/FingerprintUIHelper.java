@@ -28,7 +28,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 
 /**
  * Small helper class to manage text/icon around fingerprint authentication UI.

@@ -42,7 +42,7 @@ import android.os.PowerManager;
 import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.utils.Log_OC;

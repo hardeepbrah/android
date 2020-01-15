@@ -29,7 +29,7 @@ import android.view.MenuItem;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.domain.capabilities.model.OCCapability;
 import com.owncloud.android.files.services.FileDownloader.FileDownloaderBinder;

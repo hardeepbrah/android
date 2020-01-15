@@ -26,7 +26,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.files.services.FileUploader;

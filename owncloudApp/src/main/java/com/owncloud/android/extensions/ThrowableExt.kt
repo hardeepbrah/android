@@ -20,7 +20,7 @@
 package com.owncloud.android.extensions
 
 import android.content.res.Resources
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.domain.exceptions.AccountNotNewException
 import com.owncloud.android.domain.exceptions.AccountNotTheSameException
 import com.owncloud.android.domain.exceptions.BadOcVersionException

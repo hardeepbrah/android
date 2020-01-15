@@ -31,7 +31,7 @@ import android.content.pm.ResolveInfo;
 import android.webkit.MimeTypeMap;
 
 import androidx.fragment.app.DialogFragment;
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.domain.sharing.shares.model.OCShare;

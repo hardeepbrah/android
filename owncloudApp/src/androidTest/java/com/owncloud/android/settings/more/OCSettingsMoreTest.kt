@@ -39,8 +39,8 @@ import androidx.test.espresso.intent.matcher.IntentMatchers.hasFlag
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.rule.ActivityTestRule
-import com.owncloud.android.BuildConfig
-import com.owncloud.android.R
+import co.spacium.cloud.BuildConfig
+import co.spacium.cloud.R
 import com.owncloud.android.ui.activity.LogHistoryActivity
 import com.owncloud.android.ui.activity.Preferences
 import com.owncloud.android.ui.activity.PrivacyPolicyActivity

@@ -28,7 +28,7 @@ package com.owncloud.android.ui.dialog;
 import android.app.Dialog;
 import android.os.Bundle;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.ui.activity.ComponentsGetter;
 import com.owncloud.android.ui.dialog.ConfirmationDialogFragment.ConfirmationDialogFragmentListener;

@@ -25,7 +25,7 @@ import android.accounts.Account
 import android.content.Context
 import android.database.MatrixCursor
 import android.provider.DocumentsContract.Root
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.datamodel.FileDataStorageManager
 import com.owncloud.android.datamodel.OCFile
 

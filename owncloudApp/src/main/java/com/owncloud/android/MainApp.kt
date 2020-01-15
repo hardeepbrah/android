@@ -32,6 +32,8 @@ import android.preference.PreferenceManager
 import android.view.WindowManager
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
+import co.spacium.cloud.BuildConfig
+import co.spacium.cloud.R
 import com.owncloud.android.authentication.FingerprintManager
 import com.owncloud.android.authentication.PassCodeManager
 import com.owncloud.android.authentication.PatternManager

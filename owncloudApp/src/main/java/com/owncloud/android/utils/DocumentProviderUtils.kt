@@ -21,7 +21,7 @@ package com.owncloud.android.utils
 
 import android.content.Context
 import android.provider.DocumentsContract
-import com.owncloud.android.R
+import co.spacium.cloud.R
 
 class DocumentProviderUtils {
     companion object {

@@ -24,7 +24,7 @@ import android.net.http.SslError;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.ui.dialog.SslUntrustedCertDialog;
 import com.owncloud.android.utils.PreferenceUtils;
 

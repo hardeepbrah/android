@@ -39,7 +39,7 @@ import android.widget.ListView
 import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import com.owncloud.android.R
+import co.spacium.cloud.R
 import com.owncloud.android.datamodel.OCFile
 import com.owncloud.android.domain.sharing.shares.model.OCShare
 import com.owncloud.android.domain.sharing.shares.model.ShareType

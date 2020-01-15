@@ -18,7 +18,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.owncloud.android">
+    package="co.spacium.cloud">
 
     <uses-sdk
         tools:overrideLibrary="android.support.customtabs" />
@@ -61,9 +61,10 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
-        android:name=".MainApp"
+        android:name="com.owncloud.android.MainApp"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:manageSpaceActivity="com.owncloud.android.ui.activity.ManageSpaceActivity"
@@ -73,7 +74,7 @@
         android:theme="@style/Theme.ownCloud.Toolbar"
         tools:targetApi="n">
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.owncloud.android.ui.activity.SplashActivity"
             android:theme="@style/Theme.ownCloud.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,12 +83,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.FileDisplayActivity"
+            android:name="com.owncloud.android.ui.activity.FileDisplayActivity"
             android:theme="@style/Theme.ownCloud.Toolbar.Drawer">
         </activity>
-        <activity android:name=".ui.activity.ManageAccountsActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.ManageAccountsActivity" />
         <activity
-            android:name=".ui.activity.ReceiveExternalFilesActivity"
+            android:name="com.owncloud.android.ui.activity.ReceiveExternalFilesActivity"
             android:excludeFromRecents="true"
             android:taskAffinity="">
             <intent-filter>
@@ -106,14 +107,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.Preferences"
+            android:name="com.owncloud.android.ui.activity.Preferences"
             android:theme="@style/Theme.ownCloud" />
         <activity
-            android:name=".ui.preview.PreviewImageActivity"
+            android:name="com.owncloud.android.ui.preview.PreviewImageActivity"
             android:theme="@style/Theme.ownCloud.Overlay" />
 
         <service
-            android:name=".authentication.AccountAuthenticatorService"
+            android:name="com.owncloud.android.authentication.AccountAuthenticatorService"
             android:exported="true">
             <intent-filter android:priority="100">
                 <action android:name="android.accounts.AccountAuthenticator" />
@@ -124,7 +125,7 @@
                 android:resource="@xml/authenticator" />
         </service>
         <service
-            android:name=".syncadapter.FileSyncService"
+            android:name="com.owncloud.android.syncadapter.FileSyncService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -135,25 +136,25 @@
                 android:resource="@xml/syncadapter_files" />
         </service>
         <service
-            android:name=".files.services.RetryUploadJobService"
+            android:name="com.owncloud.android.files.services.RetryUploadJobService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".files.services.RetryDownloadJobService"
+            android:name="com.owncloud.android.files.services.RetryDownloadJobService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".files.services.CameraUploadsSyncJobService"
+            android:name="com.owncloud.android.files.services.CameraUploadsSyncJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true">
         </service>
         <service
-            android:name=".files.services.AvailableOfflineSyncJobService"
+            android:name="com.owncloud.android.files.services.AvailableOfflineSyncJobService"
             android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
 
         <provider
-            android:name=".providers.FileContentProvider"
+            android:name="com.owncloud.android.providers.FileContentProvider"
             android:authorities="@string/authority"
             android:enabled="true"
             android:exported="true"
@@ -167,7 +168,7 @@
             android:exported="false"
             android:label="@string/search_users_and_groups_hint" />
         <provider
-            android:name=".providers.DocumentsStorageProvider"
+            android:name="com.owncloud.android.providers.DocumentsStorageProvider"
             android:authorities="@string/document_provider_authority"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -189,7 +190,7 @@
         </provider>
 
         <activity
-            android:name=".authentication.AuthenticatorActivity"
+            android:name="com.owncloud.android.authentication.AuthenticatorActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.ownCloud.Authenticator">
@@ -205,35 +206,35 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".services.OperationsService" />
-        <service android:name=".files.services.FileDownloader" />
-        <service android:name=".files.services.FileUploader" />
-        <service android:name=".media.MediaService" />
+        <service android:name="com.owncloud.android.services.OperationsService" />
+        <service android:name="com.owncloud.android.files.services.FileDownloader" />
+        <service android:name="com.owncloud.android.files.services.FileUploader" />
+        <service android:name="com.owncloud.android.media.MediaService" />
 
         <activity
-            android:name=".ui.activity.PassCodeActivity"
+            android:name="com.owncloud.android.ui.activity.PassCodeActivity"
             android:theme="@style/Theme.ownCloud" />
         <activity
-            android:name=".ui.activity.ConflictsResolveActivity"
+            android:name="com.owncloud.android.ui.activity.ConflictsResolveActivity"
             android:theme="@style/Theme.ownCloud" />
-        <activity android:name=".ui.activity.GenericExplanationActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.GenericExplanationActivity" />
         <activity
-            android:name=".ui.activity.ErrorsWhileCopyingHandlerActivity"
+            android:name="com.owncloud.android.ui.activity.ErrorsWhileCopyingHandlerActivity"
             android:theme="@style/Theme.ownCloud" />
         <activity
-            android:name=".ui.activity.LogHistoryActivity"
+            android:name="com.owncloud.android.ui.activity.LogHistoryActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".ui.errorhandling.ErrorShowActivity" />
+        <activity android:name="com.owncloud.android.ui.errorhandling.ErrorShowActivity" />
         <activity
-            android:name=".ui.activity.UploadListActivity"
+            android:name="com.owncloud.android.ui.activity.UploadListActivity"
             android:theme="@style/Theme.ownCloud.Toolbar.Drawer" />
         <activity
-            android:name=".ui.activity.WhatsNewActivity"
+            android:name="com.owncloud.android.ui.activity.WhatsNewActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             />
 
         <receiver
-            android:name=".broadcastreceivers.ConnectivityActionReceiver"
+            android:name="com.owncloud.android.broadcastreceivers.ConnectivityActionReceiver"
             android:enabled="true"
             android:label="ConnectivityActionReceiver">
             <intent-filter>
@@ -244,12 +245,12 @@
         </receiver>
 
         <activity
-            android:name=".ui.activity.CopyToClipboardActivity"
+            android:name="com.owncloud.android.ui.activity.CopyToClipboardActivity"
             android:icon="@drawable/copy_link"
             android:label="@string/copy_link" />
-        <activity android:name=".ui.activity.FolderPickerActivity" />
-        <activity android:name=".ui.activity.LocalFolderPickerActivity" />
-        <activity android:name=".ui.activity.UploadPathActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.FolderPickerActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.LocalFolderPickerActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.UploadPathActivity" />
         <activity
             android:name="com.owncloud.android.presentation.ui.sharing.ShareActivity"
             android:label="@string/share_dialog_title"
@@ -265,15 +266,15 @@
                 android:resource="@xml/users_and_groups_searchable" />
         </activity>
         <activity
-            android:name=".ui.activity.ManageSpaceActivity"
+            android:name="com.owncloud.android.ui.activity.ManageSpaceActivity"
             android:label="@string/manage_space_title"
             android:theme="@style/Theme.ownCloud" />
-        <activity android:name=".ui.activity.PrivacyPolicyActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.PrivacyPolicyActivity" />
         <activity
-            android:name=".ui.preview.PreviewVideoActivity"
+            android:name="com.owncloud.android.ui.preview.PreviewVideoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:theme="@style/Theme.ownCloud.Fullscreen" />
-        <activity android:name=".ui.activity.PatternLockActivity" />
-        <activity android:name=".ui.activity.FingerprintActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.PatternLockActivity" />
+        <activity android:name="com.owncloud.android.ui.activity.FingerprintActivity" />
     </application>
 </manifest>

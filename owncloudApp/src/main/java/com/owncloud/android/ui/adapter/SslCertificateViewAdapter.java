@@ -24,7 +24,7 @@ import android.net.http.SslCertificate;
 import android.view.View;
 import android.widget.TextView;
 
-import com.owncloud.android.R;
+import co.spacium.cloud.R;
 import com.owncloud.android.ui.dialog.SslUntrustedCertDialog;
 
 import java.text.DateFormat;
