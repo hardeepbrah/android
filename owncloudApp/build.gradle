@@ -6,11 +6,18 @@ apply plugin: 'kotlin-android-extensions'
 
 def commitSHA1 = 'COMMIT_SHA1'
 def gitRemote = 'GIT_REMOTE'
+def appCenterSdkVersion = '2.5.1'
 
 dependencies {
     // Data and domain modules
     implementation project(':owncloudDomain')
     implementation project(':owncloudData')
+
+    // App Center
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion}"
+
 
     // Dependencies for app building
     implementation "androidx.legacy:legacy-support-v4:$androidX"

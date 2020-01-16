@@ -58,6 +58,10 @@ import com.owncloud.android.ui.activity.WhatsNewActivity
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.core.context.stopKoin
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.distribute.Distribute;
 
 /**
  * Main Application of the project
@@ -73,7 +77,7 @@ class MainApp : MultiDexApplication() {
         appContext = applicationContext
 
         startLogIfDeveloper()
-
+        AppCenter.start(this, "38d46a7f-870b-4fbd-9c53-eb701b944de9", Analytics::class.java, Crashes::class.java,Distribute::class.java);
         OwnCloudClient.setContext(appContext)
 
         OwnCloudClientManagerFactory.setUserAgent(userAgent)

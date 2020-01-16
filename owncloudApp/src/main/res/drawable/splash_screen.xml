@@ -23,7 +23,7 @@
     <item android:drawable="@color/splash_background"/>
     <item>
         <bitmap
-            android:src="@drawable/splash_image"
+            android:src="@drawable/logo"
             android:gravity="center"/>
     </item>
 </layer-list>
