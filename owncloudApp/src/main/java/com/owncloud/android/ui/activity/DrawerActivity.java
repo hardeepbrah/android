@@ -296,13 +296,12 @@ public abstract class DrawerActivity extends ToolbarActivity {
 
     private void openFeedback() {
         String feedbackMail = (String) getText(R.string.mail_feedback);
-        String feedback = "Android v" + BuildConfig.VERSION_NAME + " - " + getText(R.string.drawer_feedback);
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.putExtra(Intent.EXTRA_SUBJECT, feedback);
+        String feedback = "Spacium Cloud Android v" + BuildConfig.VERSION_NAME + " - " + getText(R.string.drawer_feedback);
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto",feedbackMail, null));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, feedback);
+        startActivity(Intent.createChooser(emailIntent, "Send email..."));
 
-        intent.setDataAndType(Uri.parse(feedbackMail), "text/plain");
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
     }
 
     /**
