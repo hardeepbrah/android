@@ -543,7 +543,7 @@
   <string name="welcome_feature_2_title">Share files and folders</string>
   <string name="welcome_feature_2_text">You can share privately or publicly</string>
   <string name="welcome_feature_3_title">Multi account</string>
-  <string name="welcome_feature_3_text">Connect to all your ownCloud servers</string>
+  <string name="welcome_feature_3_text">Connect multiple accounts in same device</string>
   <string name="welcome_feature_4_title">Camera uploads</string>
   <string name="welcome_feature_4_text">Your pictures/videos automatically uploaded</string>
   <string name="welcome_feature_5_title">Video streaming</string>
