@@ -82,6 +82,12 @@
     </group>
 
     <group android:id="@+id/drawer_menu_settings_etc">
+
+        <item
+            android:orderInCategory="3"
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/ic_attach_money"
+            android:title="@string/actionbar_subscription" />
         <item
             android:orderInCategory="3"
             android:id="@+id/nav_settings"

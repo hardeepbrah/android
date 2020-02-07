@@ -89,7 +89,8 @@
     <string name="auth_host_url">Server address https://&#8230;</string>
     <string name="auth_username">Username</string>
     <string name="auth_password">Password</string>
-    <string name="auth_register">New to %1$s?</string>
+    <string name="auth_register">Create Account</string>
+    <string name="auth_login">Back to Login</string>
     <string name="sync_string_files">Files</string>
     <string name="setup_btn_login">Log in</string>
     <string name="uploader_btn_upload_text">Upload</string>
@@ -259,6 +260,7 @@
 
     <string name="auth_getting_authorization">Getting authorization&#8230;</string>
     <string name="auth_trying_to_login">Trying to log in&#8230;</string>
+    <string name="auth_trying_to_register">Registering..</string>
     <string name="auth_no_net_conn_title">No network connection</string>
     <string name="auth_nossl_plain_ok_title">Secure connection unavailable.</string>
     <string name="auth_connection_established">Connection established</string>
@@ -599,4 +601,10 @@
     <string name="welcome_feature_11_text">Please upgrade your server or the coming app versions will not work for you</string>
     <string name="no_borwser_installed_alert">No browser installed. Please install a Browser in order to allow a secure login.</string>
     <string name="common_not_found">it was not found</string>
+    <string name="actionbar_subscription">Subscription</string>
+    <string name="setup_btn_regsiter">Register</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_name">Name</string>
+    <string name="auth_confirm_password">Confirm Password</string>
+    <string name="auth_registered_done">Your account has been created successfully</string>
 </resources>

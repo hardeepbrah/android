@@ -18,12 +18,26 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.snackbar.Snackbar;
 import com.owncloud.android.MainApp;
+import com.owncloud.android.api.Config;
+import com.owncloud.android.api.SpaciumCloudApiInterface;
 import com.owncloud.android.authentication.AccountUtils;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.domain.capabilities.model.OCCapability;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.dialog.LoadingDialog;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
+
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Base Activity with common behaviour for activities dealing with ownCloud {@link Account}s .
@@ -330,5 +344,35 @@ public abstract class BaseActivity extends AppCompatActivity {
             return;
         }
         Snackbar.make(rootView, message, Snackbar.LENGTH_LONG).show();
+    }
+
+
+    public SpaciumCloudApiInterface getApi() {
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        OkHttpClient httpClient = new OkHttpClient.Builder()
+                .addInterceptor(new Interceptor() {
+                    @NotNull
+                    @Override
+                    public Response intercept(@NotNull Chain chain) throws IOException {
+                        Request.Builder ongoing = chain.request().newBuilder();
+                        ongoing.addHeader("Accept", "application/json;versions=1");
+
+                        //ongoing.addHeader("Authorization", "bearer " + getAccessToken());
+
+                        return chain.proceed(ongoing.build());
+                    }
+                }).addInterceptor(interceptor)
+                .build();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Config.apiBase())
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(httpClient)
+                .build();
+
+
+        return retrofit.create(SpaciumCloudApiInterface.class);
     }
 }

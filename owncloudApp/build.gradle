@@ -19,6 +19,15 @@ dependencies {
     implementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion}"
 
 
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+    implementation 'com.android.billingclient:billing:2.1.0'
+
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+
+
     // Dependencies for app building
     implementation "androidx.legacy:legacy-support-v4:$androidX"
     implementation "androidx.annotation:annotation:1.1.0"
@@ -34,6 +43,7 @@ dependencies {
     implementation "androidx.sqlite:sqlite:$sqliteVersion"
 
     // Tests
+    implementation 'androidx.appcompat:appcompat:1.0.2'
     testImplementation project(':owncloudTestUtil')
     testImplementation "junit:junit:$junitVersion"
     testImplementation "androidx.arch.core:core-testing:$archLifecycleVersion"
@@ -111,7 +121,7 @@ android {
 
         testInstrumentationRunner "com.owncloud.android.utils.OCTestAndroidJUnitRunner"
 
-        versionCode = 3
+        versionCode = 4
         versionName = "1.0"
 
         buildConfigField "String", gitRemote, "\"" + getGitOriginRemote() + "\""
@@ -172,7 +182,7 @@ android {
         }
 
         debug {
-            applicationIdSuffix ".debug"
+            applicationIdSuffix
         }
     }
 

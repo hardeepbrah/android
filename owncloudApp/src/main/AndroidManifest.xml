@@ -1,28 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ownCloud Android client application
-
-  Copyright (C) 2012  Bartek Przybylski
-  Copyright (C) 2016 ownCloud GmbH.
-
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License version 2,
-  as published by the Free Software Foundation.
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="co.spacium.cloud">
 
-    <uses-sdk
-        tools:overrideLibrary="android.support.customtabs" />
-
+    <uses-sdk tools:overrideLibrary="android.support.customtabs" />
     <!--
          GET_ACCOUNTS is needed for API < 23.
         For API >= 23 results in the addition of CONTACTS group to the list of permissions that may be
@@ -32,7 +13,6 @@
         See note in http://developer.android.com/intl/es/reference/android/Manifest.permission.html#GET_ACCOUNTS
     -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
     <!--
          USE_CREDENTIALS, MANAGE_ACCOUNTS and AUTHENTICATE_ACCOUNTS are needed for API < 23.
         In API >= 23 the do not exist anymore
@@ -40,13 +20,11 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
-
     <!--
          WRITE_EXTERNAL_STORAGE may be enabled or disabled by the user after installation in
         API >= 23; the app needs to handle this
     -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <!--
          Next permissions are always approved in installation time,
         the apps needs to do nothing special in runtime
@@ -68,11 +46,13 @@
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:manageSpaceActivity="com.owncloud.android.ui.activity.ManageSpaceActivity"
-        android:resizeableActivity="true"
         android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="true"
         android:supportsPictureInPicture="false"
         android:theme="@style/Theme.ownCloud.Toolbar"
         tools:targetApi="n">
+        <activity android:name="com.owncloud.android.ui.activity.RegisterActivity"></activity>
+        <activity android:name="com.owncloud.android.ui.activity.SubscriptionActivity" />
         <activity
             android:name="com.owncloud.android.ui.activity.SplashActivity"
             android:theme="@style/Theme.ownCloud.Splash">
@@ -84,8 +64,7 @@
         </activity>
         <activity
             android:name="com.owncloud.android.ui.activity.FileDisplayActivity"
-            android:theme="@style/Theme.ownCloud.Toolbar.Drawer">
-        </activity>
+            android:theme="@style/Theme.ownCloud.Toolbar.Drawer" />
         <activity android:name="com.owncloud.android.ui.activity.ManageAccountsActivity" />
         <activity
             android:name="com.owncloud.android.ui.activity.ReceiveExternalFilesActivity"
@@ -145,13 +124,11 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name="com.owncloud.android.files.services.CameraUploadsSyncJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE"
-            android:exported="true">
-        </service>
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name="com.owncloud.android.files.services.AvailableOfflineSyncJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE">
-        </service>
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <provider
             android:name="com.owncloud.android.providers.FileContentProvider"
@@ -159,8 +136,7 @@
             android:enabled="true"
             android:exported="true"
             android:label="@string/sync_string_files"
-            android:syncable="true"
-            />
+            android:syncable="true" />
         <provider
             android:name="com.owncloud.android.presentation.providers.sharing.UsersAndGroupsSearchProvider"
             android:authorities="@string/search_suggest_authority"
@@ -176,9 +152,7 @@
             <intent-filter>
                 <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
-        </provider>
-
-        <!-- new provider used to generate URIs without file:// scheme (forbidden from Android 7) -->
+        </provider> <!-- new provider used to generate URIs without file:// scheme (forbidden from Android 7) -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="@string/file_provider_authority"
@@ -201,8 +175,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="oc"
-                    android:host="android.owncloud.com" />
+                    android:host="android.owncloud.com"
+                    android:scheme="oc" />
             </intent-filter>
         </activity>
 
@@ -230,8 +204,7 @@
             android:theme="@style/Theme.ownCloud.Toolbar.Drawer" />
         <activity
             android:name="com.owncloud.android.ui.activity.WhatsNewActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            />
+            android:configChanges="keyboardHidden|orientation|screenSize" />
 
         <receiver
             android:name="com.owncloud.android.broadcastreceivers.ConnectivityActionReceiver"
@@ -277,4 +250,5 @@
         <activity android:name="com.owncloud.android.ui.activity.PatternLockActivity" />
         <activity android:name="com.owncloud.android.ui.activity.FingerprintActivity" />
     </application>
+
 </manifest>

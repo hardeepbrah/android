@@ -254,6 +254,11 @@ public abstract class DrawerActivity extends ToolbarActivity {
                                         Preferences.class);
                                 startActivity(settingsIntent);
                                 break;
+                            case R.id.nav_subscription:
+                                Intent subscriptionsIntent = new Intent(getApplicationContext(),
+                                        SubscriptionActivity.class);
+                                startActivity(subscriptionsIntent);
+                                break;
                             case R.id.drawer_menu_account_add:
                                 createAccount(false);
                                 break;
@@ -557,7 +562,7 @@ public abstract class DrawerActivity extends ToolbarActivity {
         if (mDrawerLayout != null && account != null) {
             TextView username = (TextView) findNavigationViewChildById(R.id.drawer_username);
             TextView usernameFull = (TextView) findNavigationViewChildById(R.id.drawer_username_full);
-            usernameFull.setText(account.name);
+            usernameFull.setText(account.name.replace("@cloud.spacium.co",""));
             try {
                 OwnCloudAccount oca = new OwnCloudAccount(account, this);
                 username.setText(oca.getDisplayName());

@@ -97,6 +97,7 @@ import com.owncloud.android.operations.AuthenticationMethod;
 import com.owncloud.android.operations.GetServerInfoOperation;
 import com.owncloud.android.services.OperationsService;
 import com.owncloud.android.services.OperationsService.OperationsServiceBinder;
+import com.owncloud.android.ui.activity.RegisterActivity;
 import com.owncloud.android.ui.dialog.LoadingDialog;
 import com.owncloud.android.ui.dialog.SslUntrustedCertDialog;
 import com.owncloud.android.ui.errorhandling.ErrorMessageAdapter;
@@ -1608,6 +1609,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
         Intent register = new Intent(
                 ACTION_VIEW, Uri.parse(getString(R.string.welcome_link_url))
         );
+        register = new Intent(this, RegisterActivity.class);
         setResult(RESULT_CANCELED);
         startActivity(register);
     }
