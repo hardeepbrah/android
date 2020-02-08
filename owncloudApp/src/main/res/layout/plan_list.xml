@@ -5,13 +5,14 @@
     android:orientation="vertical"
     android:padding="30dp">
 
-    <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView android:elevation="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout android:orientation="vertical"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/plan_name"
@@ -20,16 +21,22 @@
                 android:layout_gravity="center_horizontal" />
 
 
-            <Button android:layout_gravity="center_horizontal"
+            <Button
                 android:id="@+id/button_subscribe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subscribe" />
-            <TextView android:layout_gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/owncloud_blue_accent"
+                android:text="Subscribe"
+                android:textColor="@color/white" android:paddingHorizontal="10dp" />
+
+            <TextView
                 android:id="@+id/button_current_plan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Current Plan" android:visibility="gone" />
+                android:layout_gravity="center_horizontal"
+                android:text="Current Plan"
+                android:visibility="gone" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

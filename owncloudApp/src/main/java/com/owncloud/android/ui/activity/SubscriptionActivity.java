@@ -89,7 +89,7 @@ public class SubscriptionActivity extends ToolbarActivity implements PurchasesUp
                     plans.addAll(response.body());
                     mPlanListAdapter.notifyDataSetChanged();
                     mProgressBar.setIndeterminate(false);
-                    mProgressBar.setVisibility(View.INVISIBLE);
+                    mProgressBar.setVisibility(View.GONE);
                     setupBillingClient();
 
                 }
